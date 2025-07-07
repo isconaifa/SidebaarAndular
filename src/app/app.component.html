@@ -1,0 +1,12 @@
+<div class="container-fluid g-0">
+<app-navbar (sideNavToggled)="sideNavStatus=$event;"></app-navbar>
+
+<main>
+<app-sidebar [sideNavStatus]="sideNavStatus" [extraClass]="{'app-navbar-open': sideNavStatus}"></app-sidebar>
+
+<div class="display-area">
+<p class=" fs-1 fw-bold fst-italic">Conteúdo</p>
+</div>
+</main>
+
+</div>
